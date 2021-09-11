@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeUI.Views.HomePage"
+             xmlns:views="clr-namespace:HomeUI.Views"
+             BackgroundColor="WhiteSmoke"
+             >
+
+    <ContentPage.Content>
+
+        <Grid RowDefinitions="*,*,*" 
+              ColumnDefinitions="*,*" 
+              VerticalOptions="Center" 
+              Padding="20"
+              ColumnSpacing="20"
+              RowSpacing="20">
+
+
+            <views:MenuOptionView Grid.Column="0" Grid.Row="0" HasShadow="True" CornerRadius="10" BindingContext="{Binding Bar}"/>
+            <views:MenuOptionView Grid.Column="1" Grid.Row="0" HasShadow="True" CornerRadius="10" BindingContext="{Binding Dining}"/>
+            <views:MenuOptionView Grid.Column="0" Grid.Row="1" HasShadow="True" CornerRadius="10" BindingContext="{Binding Coffe}"/>
+            <views:MenuOptionView Grid.Column="1" Grid.Row="1" HasShadow="True" CornerRadius="10" BindingContext="{Binding Nearby}"/>
+            <views:MenuOptionView Grid.Column="0" Grid.Row="2" HasShadow="True" CornerRadius="10" BindingContext="{Binding FastFood}"/>
+            <views:MenuOptionView Grid.Column="1" Grid.Row="2" HasShadow="True" CornerRadius="10" BindingContext="{Binding FeaturedFood}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
